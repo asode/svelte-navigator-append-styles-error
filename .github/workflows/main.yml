@@ -1,14 +1,14 @@
 name: CI
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   workflow_dispatch:
 
 jobs:
-  test_pull_request:
+  test_push_or_pull_request:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
